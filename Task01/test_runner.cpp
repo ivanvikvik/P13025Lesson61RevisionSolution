@@ -1,16 +1,23 @@
-#include <iostream>
-#include "logic.h"
+﻿#include "test.h"
 
-using namespace std;
+void main() {
+	cout << "\033[1;36m";
+	cout << "TOTAL 12 tests:\n";
 
-int main() {
-	int a = 1, b = 2, c = 3;
+	cout << "\033[1;33m";
+	cout << "----------------------------------------------------" << endl;
+	cout << "\033[0m";
 
-	cout << a << " " << b << " " << c << endl;
-
-	get_in_desc_order(&a, &b, &c);
-
-	cout << a << " " << b << " " << c << endl;
-
-	return 0;
+	test01();
+	test02();
+	test03();
+	test04();
+	test05();
+	test06();
+	test07();
+	test08();
+	test09();
+	test10();
+	test11();
+	test12();
 }
