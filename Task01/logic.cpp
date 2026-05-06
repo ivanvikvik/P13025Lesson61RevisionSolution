@@ -7,3 +7,19 @@
 // удовлетворяло следующему неравенству a >= b >= c.
 // 
 // На базе данной функции необходимо реализовать тестовый или полноценный проект.
+
+#include "logic.h"
+
+void swap_if(int* x, int* y) {
+	if (*x < *y) {
+		int t = *x;
+		*x = *y;
+		*y = t;
+	}
+}
+
+void get_in_desc_order(int* a, int* b, int* c) {
+	swap_if(a, b);
+	swap_if(b, c);
+	swap_if(a, b);
+}
